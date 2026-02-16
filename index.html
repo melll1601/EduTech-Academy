@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type = "image/png" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Edutech Academy</title>
+    <style>
+        :root{
+            --bg-light: #F9F9F9;
+            --bg-dark: #1E1E1E;
+            --text-light: #1E1E1E;
+            --text-dark: #F9F9F9;
+            --hover-dark: #005FA3;
+            --hover-light: #66BFFF;
+            --dividers-light:  #E0E0E0;
+            --dividers-dark: #444444;
+            --main-color-light: #0077CC;
+            --main-color-dark: #4DA6FF;
+            --bg-card-box-dark: #2C2C2C;
+            --bg-card-box-light: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="font-[Poppins] bg-[var(--bg-light)] text-[var(--text-light)] hover:bg-[var(--hover-light)] m-4">
+    <header class="flex justify-between items-center">
+        <div class="flex gap-2 items-center">
+            <img class="h-[25px]" src="assets/images/logo.svg" alt="Logo da EduTech Academy">
+            <span class="font-bold text-[var(--main-color-light)]">EduTech Academy</span>
+        </div>
+        <ul id="menu-dektop" class="hidden gap-4 text-[12px] items-center sm:flex">
+            <li id="Home" class="text-[var(--main-color-light)] font-semibold">Home</li>
+            <li>Cursos</li>
+            <li>Matrícula</li>
+            <li>Sobre</li>
+            <button id="btn-dark-light" class="w-[16px]" ><img src="assets/images/moon.svg" alt="Imagem de para mudar tema do site"></button>
+        </ul>
+        <img id="menu-mobile" class="h-[20px] sm:hidden" src="assets/images/menu-mobile.svg" alt="Menu Hamburguer para Celular">
+    </header>
+
+    <hero>
+        <h1>Construa Seu Futuro com a EduTech Academy</h1>
+        <h2>Cursos de alta qualidade para impulsionar sua carreira e transformar sua vida profissional.</h2>
+    </hero>
+    
+    <main>
+        <section id="our-courses">
+            <h3>Nossos Cursos</h3>
+            <div id="card-course">
+                <img src="" alt="">
+                <div>
+                    <h4>Desenvolvimento Web Fullstack</h4>
+                    <div>
+                        <img src="" alt="">
+                        <p>120 horas</p>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        <p>EAD</p>
+                    </div>
+
+                    <a href="">Ver detalhes</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
