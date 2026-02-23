@@ -50,8 +50,8 @@
     </section>
     
     <main>
-        <h3 class="font-semibold text-2xl">Nossos Cursos</h3>
-        <section id="our-courses" class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <h3 class="font-semibold text-2xl">Nossos Cursos</h3>
+      <section id="our-courses" class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       
         <div class="border border-[var(--dividers-light)] rounded-xl flex flex-col overflow-hidden">
           <img class="h-[180px] w-full object-cover" src="assets/images/fullstack.jpg" alt="Imagem do Curso de Desenvolvimento Web Fullstack">
@@ -144,6 +144,95 @@
           </div>
         </div>
       
+      </section>
+
+      <section class="md:flex">
+        <div id="registration">
+          <h3 class="font-semibold text-[20px] mt-14 mb-8">Matrícula</h3>
+
+          <div id="form" class="border rounded-md p-5">
+            <h4 class="font-semibold text-[1rem] mb-4">Formulário de Matrícula</h4>
+            <form class="font-medium">
+
+              <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                <div id="form-registration" class="flex flex-col">
+                  <label for="nome">Nome Completo *</label>
+                  <input class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div id="form-registration" class="flex flex-col">
+                  <label for="email">Email *</label>
+                  <input class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" type="text" name="email" id="email" placeholder="Digite seu email" required>  
+                </div>
+                <div id="form-registration" class="flex flex-col">               
+                  <label for="telefone">Telefone *</label>
+                  <input class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000" required>
+                </div>
+                
+                <div id="form-registration" class="flex flex-col mb-6">
+                  <label for="cpf">CPF *</label>
+                  <input class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" type="text" name="cpf" id="cpf" placeholder="00.000.000-00" required>  
+                </div>
+              </div>
+             
+              <div class="flex flex-col mb-7">
+                <label for="curso">Curso Desejado *</label>
+                <select class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" name="cursos-opcoes" id="cursos" required>
+                    <option value="" disabled selected>Selecione um curso</option>
+                    <option value="desenvolvimento">Desenvolvimento Web fullstack</option>
+                    <option value="data-science">Data Science & Machine Learning</option>
+                    <option value="marketing">Marketing Digital & SEO</option>
+                    <option value="design">UX/UI Design</option>
+                </select>
+              </div>
+
+              <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                <div class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                  <label for="cep">CEP *</label>
+                  <input type="text" name="cep" id="cep" placeholder="00000-000" required>
+                </div>
+
+                <div class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                  <label for="rua">Rua *</label>
+                  <input type="text" name="street" id="street" required>  
+                </div>
+
+                <div class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                  <label for="neighborhood">Bairro *</label>
+                  <input type="text" name="neighborhood" id="neighborhood" required>  
+                </div>
+
+                <div class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                  <label for="city">City *</label>
+                  <input type="text" name="city" id="city" required>  
+                </div>
+
+                <div class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary mb-10">
+                  <label for="state">Estado *</label>
+                  <input type="text" name="state" id="state" required>  
+                </div>
+              </div>
+              
+              <button class="bg-[var(--main-color-light)] rounded-md p-2 text-[var(--text-dark)] font-normal">Enviar Matrícula</button>
+
+            </form>
+          </div>
+        </div>
+
+        <div class="border p-5">
+          <h3>Áreas do Conhecimento</h3>
+          <div>
+            <p>Tecnologia da Informação</p>
+            <p>Administração e Negócios</p>
+            <p>Marketing Digital</p>
+            <p>Design Gráfico</p>
+            <p>Engenharia</p>
+            <p>Saúde</p>
+            <p>Educação</p>
+            <p>Gastronomia</p>
+          </div>
+
+        </div>
       </section>
       
     </main>
