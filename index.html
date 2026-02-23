@@ -26,7 +26,7 @@
         }
     </style>
 </head>
-<body class="font-[Poppins] bg-[var(--bg-light)] text-[var(--text-light)] hover:bg-[var(--hover-light)] m-4">
+<body class="font-[Poppins] bg-[var(--bg-light)] text-[var(--text-light)] m-4">
     <header class="flex justify-between items-center">
         <div class="flex gap-2 items-center ">
             <img class="h-[25px]" src="assets/images/logo.svg" alt="Logo da EduTech Academy">
@@ -146,9 +146,9 @@
       
       </section>
 
-      <section class="md:flex">
-        <div id="registration">
-          <h3 class="font-semibold text-[20px] mt-14 mb-8">Matrícula</h3>
+      <section class="md:flex mt-14 gap-8 items-start">
+        <div id="registration" class="w-full">
+          <h3 class="font-semibold text-[20px] mb-8">Matrícula</h3>
 
           <div id="form" class="border rounded-md p-5">
             <h4 class="font-semibold text-[1rem] mb-4">Formulário de Matrícula</h4>
@@ -187,29 +187,29 @@
               </div>
 
               <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                <div class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                <div id="form-registration" class="flex flex-col">
                   <label for="cep">CEP *</label>
-                  <input type="text" name="cep" id="cep" placeholder="00000-000" required>
+                  <input class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" type="text" name="cep" id="cep" placeholder="00000-000" required>
                 </div>
 
-                <div class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                <div id="form-registration" class="flex flex-col">
                   <label for="rua">Rua *</label>
-                  <input type="text" name="street" id="street" required>  
+                  <input class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" type="text" name="street" id="street" required>  
                 </div>
 
-                <div class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                <div id="form-registration" class="flex flex-col">
                   <label for="neighborhood">Bairro *</label>
-                  <input type="text" name="neighborhood" id="neighborhood" required>  
+                  <input class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" type="text" name="neighborhood" id="neighborhood" required>  
                 </div>
 
-                <div class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                <div id="form-registration" class="flex flex-col">
                   <label for="city">City *</label>
-                  <input type="text" name="city" id="city" required>  
+                  <input class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" type="text" name="city" id="city" required>  
                 </div>
 
-                <div class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary mb-10">
+                <div id="form-registration" class="flex flex-col mb-10">
                   <label for="state">Estado *</label>
-                  <input type="text" name="state" id="state" required>  
+                  <input class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" type="text" name="state" id="state" required>  
                 </div>
               </div>
               
@@ -219,9 +219,9 @@
           </div>
         </div>
 
-        <div class="border p-5">
-          <h3>Áreas do Conhecimento</h3>
-          <div>
+        <div class="border p-6 rounded-md w-[550px] ">
+          <h3 class="font-semibold mb-4">Áreas do Conhecimento</h3>
+          <div class="flex flex-col gap-1">
             <p>Tecnologia da Informação</p>
             <p>Administração e Negócios</p>
             <p>Marketing Digital</p>
@@ -231,7 +231,6 @@
             <p>Educação</p>
             <p>Gastronomia</p>
           </div>
-
         </div>
       </section>
       
